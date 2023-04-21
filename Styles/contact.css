@@ -1,0 +1,181 @@
+/* Background */
+html{
+    background-color: #F9F9F3;
+}
+
+/* Header */
+header{
+    background-color: #334C78;
+    color: white;
+    font-family: "Century Gothic";
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Pictures/background_half3.png");
+}
+header h2{
+    font-size: 80px;
+    font-style: italic;
+}
+/*Navigation Bar */
+#nav_menu{
+    font-size: 20px;
+}
+#nav_menu ul{
+    list-style-type: none;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+#nav_menu ul li{
+    float: left;
+    width: 33.3%;
+    font-family: "Century Gothic";
+}
+#nav_menu ul li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #F5D4D4;
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+#nav_menu ul li a:hover{
+    background-color: #E29B99;
+    font-style: italic;
+    font-weight: bold;
+}
+#nav_menu a.current{
+    color: yellow;
+}
+#nav_menu ul{
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#nav_menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li{
+    float: none
+}
+#nav_menu ul li:hover > ul{
+    display: block;
+}
+#nav_menu>ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Contact Form */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    position: center;
+}
+input[type=submit]{
+    background-color: #6BCACC;
+    color: black;
+    padding: 12px 20px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2px;
+    cursor: pointer;
+    float: right;
+}
+input[type=submit]:hover{
+    background-color: #49A7A9;
+    font-style: italic;
+    font-weight: bold;
+}
+.container{
+    background-color: #F9F9F3;
+    font-family: "Century Gothic";
+    border-radius: 5px;
+    padding: 20px;
+}
+::placeholder{
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    padding-top: 50px;
+    text-align: center;
+    font-style: italic;
+    position: sticky;
+    bottom: 0;
+}
+
+
+/* Responsive Nav Bar */
+#mobile_menu {
+    display: none;
+    font-family: "Century Gothic";
+    color: black;
+}
+@media only screen and (max-width: 734px) {
+    section h1 {
+        font-size: 125%
+    }
+    section h2, aside h2 {
+        font-size: 110%;
+    }
+    aside h3 a {
+        font-size: 85%;
+    }
+}
+@media only screen and (max-width: 648px){
+    .slicknav_nav li a:hover {
+        background-color: #E29B99;
+    }
+    .slicknav_nav li:nth-child(1) a:hover,
+    .slicknav_nav li:nth-child(2) a:hover {
+        background-color: #E29B99;
+    }
+    #mobile_menu a{
+        color: black;
+    }
+    header img { float: none; }
+    header { text-align: center; }
+    section {
+        float: none;
+        width: 95%;
+    }
+    aside {
+        float: none;
+        padding-right: 2.5%;
+        width: 95%;
+    }
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: #F5D4D4 !important;
+    }
+}
+@media only screen and (max-width: 414px) {
+    body { font-size: 90%; }
+}
+
+/*DEVELOPER: Valerie Sanglay, IS117-004, Spring 2023 */
